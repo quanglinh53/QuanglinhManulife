@@ -1748,6 +1748,10 @@ input[type="text"] {
   margin-right: 15px;
 }
 
+.fbHidden {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .progress {
     margin-bottom: 20px;

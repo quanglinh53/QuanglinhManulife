@@ -53,6 +53,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 
@@ -137,12 +139,17 @@
                       <i class="fa-solid fa-mobile-screen-button"></i> Điện thoại
                     </a>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6" id="fbpc">
                     <a href="https://www.facebook.com/QuangLinhManulife/" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook PC
                     </a>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6" id="fbmb">
+                    <a class="mobile" href="fb://page/?id=111049821569409" class="fb">
+                      <i class="fa-brands fa-facebook-f"></i> Facebook Mobile
+                    </a>
+                  </div>
+                  <!-- <div class="col-sm-6">
                     <a class="mobile" href="fb://page/?id=111049821569409" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook Mobile Iphone
                     </a>
@@ -151,7 +158,7 @@
                     <a class="mobile" href="fb://page/111049821569409" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook Mobile Android
                     </a>
-                  </div>
+                  </div> -->
                   <div class="col-sm-6">
                     <a href="https://www.tiktok.com/@quanglinhmanulife" class="yt">
                       <i class="fa-brands fa-youtube"></i> Youtube
@@ -362,6 +369,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<script>
+    $( document ).ready(function() {
+      console.log( "ready!" );
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        console.log( "mobile!" );
+        $( "#fbpc" ).addClass( 'fbHidden');
+      } else {
+        console.log( "pc!" );
+        $( "#fbmb" ).addClass( 'fbHidden');
+      }
+    });
+  </script>
 
 	</body>
 </html>
