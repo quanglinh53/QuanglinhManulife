@@ -17,7 +17,8 @@ body {
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
-  background: #fafafa;
+  /* background: #fafafa; */
+  background: #eaeaea;
   color: gray;
 }
 
@@ -134,12 +135,6 @@ h6 {
   background: rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 768px) {
-  #colorlib-page {
-    padding-top: 5em;
-  }
-}
-
 #colorlib-main-nav {
   position: absolute;
   top: 0;
@@ -236,12 +231,6 @@ h6 {
   margin: 0 0 3em 0;
 }
 
-@media screen and (max-width: 768px) {
-  #colorlib-main-nav ul {
-    padding: 20px 0 0 0;
-  }
-}
-
 #colorlib-main-nav ul li {
   padding: 0;
   margin: 0;
@@ -256,12 +245,6 @@ h6 {
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
-  #colorlib-main-nav ul li a {
-    font-size: 16px;
-  }
 }
 
 #colorlib-main-nav ul li a:hover,
@@ -280,12 +263,6 @@ h6 {
   margin-bottom: 40px;
   position: relative;
   width: 100%;
-}
-
-@media screen and (max-width: 480px) {
-  #colorlib-main-nav .form-group {
-    width: 100%;
-  }
 }
 
 #colorlib-main-nav .form-group input::-webkit-input-placeholder {
@@ -351,18 +328,6 @@ h6 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  #colorlib-main-nav .gallery {
-    width: 25%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #colorlib-main-nav .gallery {
-    width: 50%;
-  }
-}
-
 #colorlib-main-nav .gallery:after {
   position: absolute;
   top: 0;
@@ -413,12 +378,6 @@ header {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    padding: 2em 0;
-  }
-}
-
 header .colorlib-navbar-brand {
   float: left;
 }
@@ -453,31 +412,22 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   text-decoration: none;
 }
 
-#colorlib-services,
 #colorlib-contact,
 #colorlib-work,
 #colorlib-blog,
-#colorlib-testimony,
 #colorlib-progress,
 #colorlib-contact,
 #colorlib-about {
-  padding: 10em 0;
+  padding: 8em 0;
   clear: both;
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
-
-  #colorlib-services,
-  #colorlib-contact,
-  #colorlib-work,
-  #colorlib-blog,
-  #colorlib-testimony,
-  #colorlib-progress,
-  #colorlib-contact,
-  #colorlib-about {
-    padding: 5em 0;
-  }
+#colorlib-services,
+#colorlib-testimony {
+  padding-bottom: 8em;
+  clear: both;
+  position: relative;
 }
 
 .rotate {
@@ -515,7 +465,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .about-desc {
-  padding-top: 3em;
+  padding-top: 5em;
 }
 
 .about-desc h2 {
@@ -575,12 +525,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font-size: 250px;
   color: #f0f0f0;
   font-weight: 700;
-}
-
-@media screen and (max-width: 768px) {
-  .bold {
-    font-size: 60px;
-  }
 }
 
 .intro-heading {
@@ -875,12 +819,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 }
 
-@media only screen and (max-width: 990px) {
-  .progress {
-    margin-bottom: 20px;
-  }
-}
-
 .services-flex {
   display: -webkit-box;
   display: -moz-box;
@@ -906,28 +844,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .services-flex .one-forth .one-third,
 .services-flex .one-forth .one-forth {
   display: inline-block;
-}
-
-@media screen and (max-width: 768px) {
-
-  .services-flex .one-forth .one-third,
-  .services-flex .one-forth .one-forth {
-    height: 400px;
-  }
-}
-
-.services-flex .one-third,
-.services-flex .one-forth {
-  display: inline-block;
-}
-
-@media screen and (max-width: 768px) {
-
-  .services-flex .one-third,
-  .services-flex .one-forth {
-    width: 100%;
-    display: block;
-  }
 }
 
 .services {
@@ -1025,16 +941,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 .work-entry .work-img:hover .display-t .work-name h2 {
   font-size: 34px;
-}
-
-@media screen and (max-width: 768px) {
-  .work-entry .work-img {
-    height: 400px;
-  }
-
-  .work-entry .work-img .display-t {
-    height: 400px;
-  }
 }
 
 .work-entry .desc .read {
@@ -1640,13 +1546,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   margin-top: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .colorlib-nav-toggle {
-    display: block;
-    top: 0px;
-  }
-}
-
 .contact-info {
   margin-bottom: 4em;
   padding: 0;
@@ -1797,6 +1696,11 @@ input[type="text"] {
   opacity: 0;
 }
 
+.services-flex .one-third,
+.services-flex .one-forth {
+  display: inline-block;
+}
+
 .social a {
   display: block;
   border: 2px solid #00a758;
@@ -1805,7 +1709,7 @@ input[type="text"] {
   -ms-border-radius: 30px;
   border-radius: 30px;
   padding: 5px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .social a.phone:hover {
@@ -1840,7 +1744,89 @@ input[type="text"] {
   text-decoration: none;
 }
 
-
 .social i {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+  #colorlib-contact, #colorlib-work, #colorlib-blog, #colorlib-progress, #colorlib-contact, #colorlib-about {
+    padding: 2em 0;
+  }
+  #colorlib-services, #colorlib-testimony {
+    padding-bottom: 2em;
+  }
+  .about-desc {
+    padding-top: 0em;
+  }
+  .social a {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bold {
+    font-size: 60px;
+  }
+  .social a {
+    margin-bottom: 10px;
+  }
+  header {
+    padding: 2em 0;
+  }
+  #colorlib-main-nav .gallery {
+    width: 25%;
+  }
+  #colorlib-main-nav ul {
+    padding: 20px 0 0 0;
+  }
+  #colorlib-main-nav ul li a {
+    font-size: 16px;
+  }
+  /* #colorlib-page {
+    padding-top: 5em;
+  } */
+  .colorlib-nav-toggle {
+    display: block;
+    top: 0px;
+  }
+  .work-entry .work-img {
+    height: 400px;
+  }
+
+  .work-entry .work-img .display-t {
+    height: 400px;
+  }
+  .services-flex .one-forth .one-third,
+  .services-flex .one-forth .one-forth {
+    height: 400px;
+  }
+  .services-flex .one-third,
+  .services-flex .one-forth {
+    width: 100%;
+    display: block;
+  }
+  #colorlib-contact, #colorlib-work, #colorlib-blog, #colorlib-progress, #colorlib-contact, #colorlib-about {
+    padding: 2em 0;
+  }
+  #colorlib-services, #colorlib-testimony {
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #colorlib-main-nav .gallery {
+    width: 50%;
+  }
+  #colorlib-main-nav .form-group {
+    width: 100%;
+  }
+  #colorlib-contact, #colorlib-work, #colorlib-blog, #colorlib-progress, #colorlib-contact, #colorlib-about {
+    padding: 2em 0;
+  }
+  #colorlib-services, #colorlib-testimony {
+    padding-bottom: 2em;
+  }
 }
