@@ -148,7 +148,7 @@
                   <h2 class="heading">About</h2>
                 </div>
                 <p class="desc-auth">
-                  <li>Là <strong><i>Chuyên viên tư vấn viên bảo hiểm</i></strong> tôi luôn đặt tính đúng đắn và yếu tố trung thực lên hàng đầu.</li>
+                  <li>Là 1 <strong><i>Chuyên viên tư vấn viên bảo hiểm</i></strong>, tôi luôn đặt tính đúng đắn và yếu tố trung thực lên hàng đầu.</li>
                   <li>Giúp bạn hiểu rõ những quyền lợi của mình trước khi tham gia Bảo hiểm.</li>
                   <li>Đồng hành cùng bạn trong suốt quá trình tham gia <strong><i>Bảo hiểm nhân thọ tại Manulife</i></strong>.</li>
                 </p>
@@ -168,18 +168,23 @@
                       <i class="fa-brands fa-facebook-f"></i> Facebook
                     </a>
                   </div>
-                  <div class="col-sm-6" id="fbmb">
+                  <div class="col-sm-6" id="fbmbip">
                     <a href="fb://page/?id=111049821569409" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook
                     </a>
                   </div>
+                  <div class="col-sm-6" id="fbmbad">
+                    <a href="fb://page/111049821569409" class="fb">
+                      <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                  </div>
                   <!-- <div class="col-sm-6">
-                    <a class="mobile" href="fb://page/?id=111049821569409" class="fb">
+                    <a href="fb://page/?id=111049821569409" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook Mobile Iphone
                     </a>
                   </div>
                   <div class="col-sm-6">
-                    <a class="mobile" href="fb://page/111049821569409" class="fb">
+                    <a href="fb://page/111049821569409" class="fb">
                       <i class="fa-brands fa-facebook-f"></i> Facebook Mobile Android
                     </a>
                   </div> -->
@@ -398,12 +403,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script>
     $(document).ready(function () {
       console.log("ready!");
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        console.log("mobile!");
+      if (/iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log("===Mobile_Iphone!===");
         $("#fbpc").addClass('fbHidden');
+        $("#fbmbad").addClass('fbHidden');
+      } else if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log("===mobile_Android!===");
+        $("#fbpc").addClass('fbHidden');
+        $("#fbmbip").addClass('fbHidden');
       } else {
-        console.log("pc!");
-        $("#fbmb").addClass('fbHidden');
+        console.log("===PC!===");
+        $("#fbmbip").addClass('fbHidden');
+        $("#fbmbad").addClass('fbHidden');
       }
     });
   </script>
