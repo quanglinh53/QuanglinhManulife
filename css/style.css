@@ -1745,6 +1745,15 @@ input[type="text"] {
   font-weight: bold;
 }
 
+.social a.fbmb:hover {
+  display: block;
+  border: 2px solid #2374e1;
+  background-color: #2374e1;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .social a.yt:hover {
   display: block;
   border: 2px solid #f00;
