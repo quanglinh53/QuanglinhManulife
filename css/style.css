@@ -1722,6 +1722,7 @@ input[type="text"] {
   background-color: #00a758;
   color: #FFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .social a.zalo:hover {
@@ -1732,6 +1733,7 @@ input[type="text"] {
   background-color: #0068ff;
   color: #FFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .social a.fb:hover {
@@ -1740,6 +1742,7 @@ input[type="text"] {
   background-color: #2374e1;
   color: #FFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .social a.yt:hover {
@@ -1748,6 +1751,7 @@ input[type="text"] {
   background-color: #f00;
   color: #FFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .social a.tt:hover {
@@ -1756,6 +1760,7 @@ input[type="text"] {
   background-color: #000;
   color: #FFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .social i {
