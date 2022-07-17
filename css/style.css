@@ -1785,6 +1785,27 @@ input[type="text"] {
   display: none;
 }
 
+/*START: Custom avatar for mobile */
+.avtHidden {
+  display: none;
+}
+
+.avt-mb-custom {
+  width: 335px;
+  height: 335px;
+  margin: 0 auto 25px;
+  border: 1px solid #00a758;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1.5px 1.5px 6px #00a758;
+}
+
+img.img-responsive.about-img-mb {
+  width: 250px;
+  margin: auto;
+}
+/*END: Custom avatar for mobile */
+
 li {
   list-style: square;
   color: #000;
