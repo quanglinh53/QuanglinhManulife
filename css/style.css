@@ -1791,9 +1791,9 @@ input[type="text"] {
 }
 
 .avt-mb-custom {
-  width: 335px;
-  height: 335px;
-  margin: 0 auto 25px;
+  width: 310px;
+  height: 310px;
+  margin: 0 auto 20px;
   border: 1px solid #00a758;
   border-radius: 50%;
   overflow: hidden;
