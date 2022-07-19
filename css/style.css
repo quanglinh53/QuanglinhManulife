@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   /* background: #fafafa; */
   background: #eaeaea;
-  color: gray;
+  /* color: gray; */
 }
 
 body.menu-show {
@@ -418,14 +418,15 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 #colorlib-progress,
 #colorlib-contact,
 #colorlib-about {
-  padding: 8em 0;
+  padding: 6em 0;
   clear: both;
   position: relative;
 }
 
 #colorlib-services,
 #colorlib-testimony {
-  padding-bottom: 8em;
+  margin-top: 4em;
+  padding-bottom: 6em;
   clear: both;
   position: relative;
 }
@@ -1376,9 +1377,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   box-shadow: none;
 }
 
-.row-padded-bottom {
+/* .row-padded-bottom {
   margin-bottom: 4em;
-}
+} */
 
 .col-pb-sm {
   margin-bottom: 5em !important;
@@ -1930,6 +1931,15 @@ li {
 .coccoc-alo-phone.coccoc-alo-green.coccoc-alo-hover .coccoc-alo-ph-img-circle,
 .coccoc-alo-phone.coccoc-alo-green:hover .coccoc-alo-ph-img-circle {
   background-color: #00a758;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.reason {
+  padding-top: 40px;
 }
 
 @-moz-keyframes coccoc-alo-circle-anim {
